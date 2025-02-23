@@ -1,0 +1,343 @@
+body,
+header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  background-color: white;
+}
+h1,
+p,
+h2 {
+  color: white;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 500;
+  font-size: 15px;
+  color: lightgray;
+}
+
+.navbar-and-logo{
+  display: none !important;
+}
+
+.dropdown button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.dropdown a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+}
+
+.dropdown .content {
+  display: none;
+  position: absolute;
+  background-color: orangered;
+  min-width: 100px;
+}
+
+/* Если наводим курсор на класс dropdown, то отображаем класс content */
+/* Типо до этого от dropdown мы видим только button */
+.dropdown:hover .content {
+  display: block;
+  z-index: 1;
+}
+
+.dropdown:hover button {
+  text-decoration: underline;
+  text-decoration-color: orangered;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.video-container {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.video-content {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  padding: 5px 10px;
+}
+#video1 {
+  margin: 0px;
+  display: block;
+  width: auto;
+
+  filter: brightness(30%);
+}
+
+#Logo {
+  padding: 30px 5px;
+  margin: 0px;
+  width: 20%;
+}
+img {
+  width: 100%;
+}
+#navigation {
+  padding: 20px 5px;
+  margin: 0px;
+}
+
+#cup {
+  height: auto;
+  width: 80px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+#First {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin: 0px;
+  font-size: 70px;
+}
+
+.under-navbar-section {
+  margin-top: 50px;
+  height: 300px;
+}
+.achievements-container {
+  margin-top: 50px;
+  flex-wrap: wrap;
+  width: 700px;
+  display: flex;
+}
+
+.achievements {
+  border-left: 3px solid orangered;
+  margin-right: 5px;
+  margin-left: 5px;
+  height: 100px;
+  margin-bottom: 20px;
+  width: 300px;
+  align-content: center;
+}
+
+.tarif {
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color: transparent;
+  border: solid;
+  border-color: orangered;
+}
+
+.tarif:hover {
+  background-color: orangered;
+}
+
+.left-section-and-button{
+  width: 100%;
+  display: block;
+}
+
+.right-section{
+  padding-left: 30px;
+  width: 100%;
+}
+
+#First {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin: 0px;
+  font-size: 50px;
+}
+
+#cup {
+  height: auto;
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.title-header{
+  text-align: center;  
+}
+
+.title-subheader {
+  text-align: center;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .dropdown button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 600;
+  }
+
+  .under-navbar-section {
+    margin-top: 50px;
+    height: 300px;
+    display: flex;
+  }
+
+  .navbar-and-logo{
+    display: flex !important;
+  }
+
+  .dropdown a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+  }
+  
+  .dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: orangered;
+    min-width: 100px;
+  }
+  
+  /* Если наводим курсор на класс dropdown, то отображаем класс content */
+  /* Типо до этого от dropdown мы видим только button */
+  .dropdown:hover .content {
+    display: block;
+    z-index: 1;
+  }
+  
+  .dropdown:hover button {
+    text-decoration: underline;
+    text-decoration-color: orangered;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* .background-clip{
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+  } */
+  
+  .video-container {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .video-content {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+  }
+  #video1 {
+    margin: 0px;
+    display: block;
+    width: 100%;
+    filter: brightness(30%);
+  }
+  
+  #Logo {
+    padding: 30px 5px;
+    margin: 0px;
+    width: 20%;
+  }
+  img {
+    width: 100%;
+  }
+  #navigation {
+    padding: 20px 5px;
+    margin: 0px;
+    width: fit-content;
+  }
+
+  #cup {
+    height: auto;
+    width: 80px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  
+  #First {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-size: 70px;
+  }
+
+  .achievements-container {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 700px;
+  }
+
+  .left-section-and-button{
+    padding-left: 10%;
+    width: 100%;
+    display: block;
+  }
+
+.achievements {
+    border-left: 3px solid orangered;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 150px;
+    margin-bottom: 20px;
+    width: 200px;
+    align-content: center;
+  }
+
+  .tarif {
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: transparent;
+    border: solid;
+    border-color: orangered;
+  }
+  
+  .tarif:hover {
+    background-color: orangered;
+  }
+
+  .title-header{
+    text-align: start;  
+  }
+  
+  .title-subheader {
+    text-align: start;
+  }
+  
+  .button-container{
+    display: flex;
+    justify-content: start;
+  }
+}
